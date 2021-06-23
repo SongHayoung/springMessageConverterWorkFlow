@@ -1,0 +1,11 @@
+###
+POST localhost:8081/welcome
+Content-Type: welcome/request
+Accept: welcome/response;q=0.8, application/json;q=1.0
+
+song
+
+###
+GET localhost:8081/welcome?name=song
+Content-Type: welcome/request
+Accept: welcome/response;q=0.8, application/json;q=1.0

@@ -16,7 +16,7 @@ public class AppInitEventListener {
 
 	@EventListener
 	public void handleContextRefresh(ApplicationStartedEvent event) {
-		log.info("ApplicationStartedEvent 발생");
+		log.info("=====등록된 메세지 컨버터 목록====");
 		handlerAdapter.getMessageConverters().forEach(converter -> log.info(converter.getClass().getName()));
 	}
 }

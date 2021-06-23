@@ -10,9 +10,9 @@ import org.springframework.http.converter.AbstractHttpMessageConverter;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.http.converter.HttpMessageNotWritableException;
 
-public class EnableMessageConverter extends AbstractHttpMessageConverter<Object> {
+public class DisableMessageConverter extends AbstractHttpMessageConverter<Object> {
 
-	public EnableMessageConverter() {
+	public DisableMessageConverter() {
 		super(StandardCharsets.UTF_8, new MediaType[]{MediaType.APPLICATION_JSON, new MediaType("application", "*+json")});
 	}
 
